@@ -1,0 +1,537 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family: Skylark;
+
+}
+
+
+
+body {
+    background-color: black;
+    width: 1200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+
+}
+
+#container {
+
+
+    height: 100%;
+
+
+}
+
+
+
+.click1 {
+    width: auto;
+    margin: auto;
+    text-align: center;
+    height: 500px;
+
+}
+
+
+
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    border-top: 2px solid #8a2be2;
+    width: 400px;
+    position: relative;
+    cursor: pointer;
+    padding: 20px 0;
+    margin-top: 100px;
+    letter-spacing: 5px;
+
+
+}
+
+h2:hover {
+    font-size: 32px;
+}
+
+
+
+/*
+@keyframes shock {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+*/
+
+
+
+
+
+
+.click-button {
+
+
+
+
+    font-family: sans-serif;
+    font-weight: 800;
+
+
+    top: 10px;
+    width: 1200px;
+
+}
+
+
+
+.click-button span {
+    position: absolute;
+    display: block;
+    width: 1200px;
+
+}
+
+.click-button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 1200px;
+    height: 10px;
+    background: linear-gradient(90deg, transparent, #8a2be2);
+}
+
+.click-button:hover span:nth-child(1) {
+    left: 100%;
+    transition: 2s;
+    transition-delay: 1s;
+}
+
+.click-button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 1200px;
+    height: 10px;
+    background: linear-gradient(270deg, transparent, #8a2be2);
+}
+
+.click-button:hover span:nth-child(3) {
+    right: 100%;
+    transition: 2s;
+    transition-delay: 0.5s;
+}
+
+.click-button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #8a2be2);
+}
+
+.click-button:hover span:nth-child(2) {
+    top: 100%;
+    transition: 2s;
+    transition-delay: 0.25s;
+}
+
+.click-button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #8a2be2);
+}
+
+.click-button:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 2s;
+    transition-delay: 0.75s;
+}
+
+.title h1 {
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    z-index: 1;
+    margin-top: 50px;
+    width: 900px;
+    position: relative;
+    letter-spacing: 3px;
+    font-family: Skylark;
+
+
+}
+
+
+
+
+.main-menu {
+    width: 100%;
+    height: 600px;
+
+}
+
+
+
+h3 {
+    color: white;
+    top: 50px;
+    padding-left: 10px;
+    bottom: 30px;
+    font-family: Skylark;
+    font-size: 40px;
+    text-align: center;
+}
+
+.start {
+    color: white;
+    top: 150px;
+    height: 100%;
+    font-family: Skylark;
+    font-size: 40px;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+ul {
+    margin-top: 50px;
+    width: 50%;
+    text-align: center;
+}
+
+li {
+    padding: 30px 10px;
+
+}
+
+
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #8a2be2;
+    animation: zanik;
+    animation-duration: 2s;
+
+}
+
+li a:hover {
+    color: white;
+    font-size: 42px;
+
+
+
+}
+
+@keyframes zanik {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50%;
+    float: left;
+    position: absolute;
+    top: 900px;
+
+}
+
+#b1 {
+    animation: ball1;
+    animation-duration: 5s;
+    transition-delay: 1s;
+    background-color: #8a2be2;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+
+#b2 {
+    animation: ball2;
+    animation-duration: 4.5s;
+    transition-delay: 0.75s;
+    background-color: white;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+
+}
+
+#b3 {
+    animation: ball3;
+    animation-duration: 4s;
+    transition-delay: 0.5s;
+    background-color: #8a2be2;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+
+}
+
+#b4 {
+    animation: ball4;
+    animation-duration: 3.5s;
+    transition-delay: 0.25s;
+    background-color: white;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes ball4 {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: 1000px;
+        transform: translateX(400deg);
+        opacity: 0;
+
+    }
+}
+
+@keyframes ball3 {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: 1000px;
+        transform: translateX(400deg);
+        opacity: 0;
+    }
+}
+
+@keyframes ball2 {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: 1000px;
+        transform: translateX(400deg);
+        opacity: 0;
+    }
+}
+
+@keyframes ball1 {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: 1000px;
+        transform: translateX(400deg);
+        opacity: 0;
+    }
+}
+
+.biotechnology {
+    width: 1000px;
+    height: 500px;
+    margin-top: 400px;
+    border-left: 20px solid cyan;
+    border-radius: 10% 10%;
+    border-right: 20px solid cyan;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    color: white;
+    font-family: Skylark;
+    font-size: 40px;
+    bottom: 30px;
+    padding: 40px 30px;
+    text-align: center;
+
+}
+
+.biotechnology p {
+    color: white;
+    font-size: 15px;
+    padding: 20px 20px;
+    line-height: 30px;
+    top: 20px;
+    text-align: center;
+
+}
+
+.biotechnology img {
+
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.nanotechnology {
+    width: 1000px;
+    height: 500px;
+    margin-top: 400px;
+    border-left: 20px solid gray;
+    border-radius: 10% 10%;
+    border-right: 20px solid gray;
+
+
+}
+
+.nanotechnology p {
+    color: white;
+    font-size: 15px;
+    padding: 20px 20px;
+    line-height: 30px;
+    top: 20px;
+    text-align: center;
+
+}
+
+.nanotechnology img {
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+
+}
+
+.internet {
+    width: 1000px;
+    height: 500px;
+    margin-top: 400px;
+    border-left: 20px solid cyan;
+    border-radius: 10% 10%;
+    border-right: 20px solid cyan;
+
+
+
+}
+
+.internet p {
+    color: white;
+    font-size: 15px;
+    padding: 20px 20px;
+    line-height: 30px;
+    top: 20px;
+    text-align: center;
+    bottom: 50px;
+
+}
+
+.internet img {
+    max-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+
+#img1 {
+    width: 60px;
+    height: 60px;
+    float: left;
+    padding: 60px 5px;
+    margin-left: 400px;
+
+}
+
+#img2 {
+    width: 60px;
+    height: 60px;
+    float: left;
+    padding: 60px 5px;
+    transform: rotate(180deg);
+
+
+}
+
+#img3 {
+    width: 60px;
+    height: 60px;
+    float: left;
+    padding: 60px 5px;
+    margin-left: 400px;
+
+}
+
+#img4 {
+    width: 60px;
+    height: 60px;
+    float: left;
+    padding: 60px 5px;
+    transform: rotate(180deg);
+}
+
+#img5 {
+    width: 60px;
+    height: 60px;
+
+    padding: 60px 5px;
+}
+
+button.return {
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 5px;
+    border: 3px solid #8a2be2;
+    border-radius: 20% 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button.return:hover {
+    background-color: #8a2be2;
+    text-decoration: none;
+}
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5 {
+    cursor: pointer;
+}
