@@ -1,0 +1,135 @@
+
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+          
+        }
+
+        #container {
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #tarcza {
+            position: fixed;
+            width: 30vw;
+            height: 30vw;
+            border-radius: 50%;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: radial-gradient(rgb(0, 0, 0) 12%, rgb(255, 0, 0) 12%, rgb(255, 0, 0) 40%, rgb(0, 128, 0) 40%, rgb(0, 128, 0) 75%, rgb(255, 255, 255) 75%);
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: 5px solid #45a049;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10%;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        button:hover+section {
+            background-color: #808080;
+            -webkit-animation-play-state: paused;
+        }
+
+        section {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #3498db;
+            border-radius: 50%;
+            animation: klatka 1.5s infinite linear alternate, chaos 2s infinite linear alternate;
+        }
+
+        header {
+            font-size: 32px;
+            color: black;
+            font-family: 'Fantasy', sans-serif;
+            letter-spacing: 2mm;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @keyframes klatka {
+            0% {
+                top: 20vh;
+                left: 20vh;
+            }
+
+            14% {
+                top: 33vh;
+                left: 88vh;
+            }
+
+            29% {
+                top: 52vh;
+                left: 16%;
+            }
+
+            45% {
+                top: 55%;
+                left: 75%;
+            }
+
+            58% {
+                top: 59%;
+                left: 90%;
+            }
+
+            73% {
+                top: 50%;
+                left: 60%;
+            }
+
+            91% {
+                top: 49%;
+                left: 19%;
+            }
+
+            100% {
+                top: 80%;
+                left: 80%;
+            }
+        }
+
+        @keyframes chaos {
+            0% {
+                transform: translate(11vh, -11vh);
+            }
+
+            10% {
+                transform: translate(-7vh, 7vh);
+            }
+
+            20% {
+                transform: translate(4vh, 11vh);
+            }
+
+            40% {
+                transform: translate(8vh, -7vh);
+            }
+
+            60% {
+                transform: translate(-30vh, 10vh);
+            }
+
+            80% {
+                transform: translate(40vh, 9vh);
+            }
+
+            100% {
+                transform: translate(7vh, -7vh);
+            }
+        }
